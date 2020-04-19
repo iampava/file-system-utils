@@ -9,7 +9,9 @@ Currently the [FileSystem API](https://developer.mozilla.org/en-US/docs/Web/API/
 
 I wanted to provide Drag-and-Drop functionality for folders in two of the apps I'm working on. Next I discovered the FileSystem API and decided to release these utility functions as a separate package.
 
-Here's the end-results of using these utils in [DevDrive](https://devdrive.io) and [Flixier](https://flixier.com).
+Here's the end-results of using these utils in [DevDrive](https://devdrive.io).
+
+<img src="https://raw.githubusercontent.com/iampava/file-system-utils/master/demo.gif" alt="Demo" border=""/>
 
 
 ## Installation & Usage
