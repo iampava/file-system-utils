@@ -11,7 +11,7 @@ I wanted to provide Drag-and-Drop functionality for folders in two of the apps I
 
 Here's the end-results of using these utils in [DevDrive](https://devdrive.io).
 
-<img src="https://raw.githubusercontent.com/iampava/file-system-utils/master/demo.gif" alt="Demo" border=""/>
+<img src="https://raw.githubusercontent.com/iampava/file-system-utils/master/demo-2.gif" alt="Demo" border=""/>
 
 
 ## Installation & Usage
