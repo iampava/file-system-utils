@@ -1,0 +1,13 @@
+{
+    "name": "file-system-utils",
+    "version": "0.0.1",
+    "license": "MIT",
+    "author": {
+        "name": "Alexandru Pavaloi",
+        "email": "pava@iampava.com",
+        "url": "https://iampava.com"
+    },
+    "dependencies": {
+        "uuid": "^7.0.3"
+    }
+}
