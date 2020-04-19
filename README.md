@@ -31,7 +31,7 @@ import {
 
 ## API
 
-### toFolderStructure(entries, middleware?) : Promise<Object>
+### toFolderStructure(entries, middleware?) : `Promise<Object>`
 
 Compute a tree-like structure of folders and files (including subfolders) from an Array of [FileSystemEntry](https://developer.mozilla.org/en-US/docs/Web/API/FileSystemEntry).
 
@@ -39,9 +39,7 @@ Compute a tree-like structure of folders and files (including subfolders) from a
 
 Type: `Array`
 
-An array of [FileSystemEntry](https://developer.mozilla.org/en-US/docs/Web/API/FileSystemEntry). You'll most likely get this from a `<input type="file">` after a user drops some files/folders on top. 
-
-You can also get this data from the [DataTransfer](https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer) object in case you're implementing the entire Drag-n-Drop yourself.
+An array of [FileSystemEntry](https://developer.mozilla.org/en-US/docs/Web/API/FileSystemEntry). You'll most likely get this from a `<input type="file">` after a user drops some files/folders on top.  You can also get this data from the [DataTransfer](https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer) object in case you're implementing the entire Drag-n-Drop yourself.
 
 
 #### middleware
@@ -52,7 +50,7 @@ Default: `(arg) => Promise.resolve(arg)`
 
 By default the resulting object will contain actual instances of [FileSystemFileEntry](https://developer.mozilla.org/en-US/docs/Web/API/FileSystemFileEntry). If instead you want to process the files and keep just certain information about them, use this middleware function which must return a Promise which resolves to the data you want to keep.
 
-I used it to keep for each file it's `name`, a unique `key` and it's `text content`. 
+I used it to keep only the file's `name`, a unique `key` and it's `text content`. 
 
 #### @returns
 
@@ -68,15 +66,15 @@ Example:
         folders: [ /* ... */ ],
         files: [/* ... */]
     }],
-    files: FileSystemFileEntry[/* ... */]
+    files: [/* ... */]
 }
 ```
 
-### toFileEntriesArray(entries, middleware) : Promise<Array>
+### toFileEntriesArray(entries, middleware?) : `Promise<Array>`
 
 Compute an Array of all the [FileSystemFileEntry](https://developer.mozilla.org/en-US/docs/Web/API/FileSystemFileEntry) found inside `entries` (including sub-entries).
 
-This function is similar to the one before, it just returns an array of all the files instead of the tree-like structure in case you don't really care about it and you just want all the files.
+This function is similar to the one before, it just returns an array of all the files instead of the tree-like structure. This is usefull in case you only care about the file contents, and not their specific directory.
 
 #### entries
 

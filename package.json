@@ -2,6 +2,11 @@
     "name": "file-system-utils",
     "version": "0.0.1",
     "license": "MIT",
+    "main": "index.js",
+    "keywords": [
+        "FileSystem API",
+        "file-system utils"
+    ],
     "author": {
         "name": "Alexandru Pavaloi",
         "email": "pava@iampava.com",
@@ -9,5 +14,8 @@
     },
     "dependencies": {
         "uuid": "^7.0.3"
-    }
+    },
+    "repository": "https://github.com/iampava/file-system-utils.git",
+    "bugs": "https://github.com/iampava/file-system-utils/issues",
+    "homepage": "https://github.com/iampava/file-system-utils"
 }
